@@ -1,0 +1,26 @@
+{
+    "name": "Jupyter DevContainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "features": {},
+    "customizations": {
+        "vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python3",
+				"jupyter.jupyterServerType": "local"
+			},
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+				"ms-vscode.git", // Include Git extension
+				"GitHub.copilot" 
+            ]
+        }
+    },
+    "postCreateCommand": "",
+    "remoteUser": "vscode"
+}
+
+
