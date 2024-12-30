@@ -1,0 +1,17 @@
+layers:
+- layer_type: !Dense
+    input_size: 784
+    output_size: 128
+  activation:
+    activation_type: ReLU
+- layer_type: !Dense
+    input_size: 128
+    output_size: 64
+  activation:
+    activation_type: ReLU
+- layer_type: !Dense
+    input_size: 64
+    output_size: 10
+  activation:
+    activation_type: Softmax
+    temperature: 1.0
