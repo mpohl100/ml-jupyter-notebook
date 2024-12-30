@@ -1,11 +1,6 @@
 layers:
 - layer_type: !Dense
-    input_size: 196
-    output_size: 256
-  activation:
-    activation_type: Sigmoid
-- layer_type: !Dense
-    input_size: 256
+    input_size: 784
     output_size: 10
   activation:
     activation_type: Sigmoid
