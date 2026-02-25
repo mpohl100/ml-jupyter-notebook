@@ -1,6 +1,12 @@
 layers:
 - layer_type: !Dense
     input_size: 784
-    output_size: 10
+    output_size: 32
   activation:
     activation_type: Sigmoid
+- layer_type: !Dense
+    input_size: 32
+    output_size: 10
+  activation:
+    activation_type: Softmax
+    temperature: 1.0
