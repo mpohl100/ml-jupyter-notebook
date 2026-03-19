@@ -1,7 +1,7 @@
 layers:
 - layer_type: !Dense
-    input_size: 784
-    output_size: 10
+    input_size: 20
+    output_size: 1
     matrix_params:
       slice_rows: 1000
       slice_cols: 1000
